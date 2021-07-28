@@ -1,0 +1,19 @@
+<div class="product-card">
+  <a href="#">
+    <img class="img-fluid" style="height:auto;" [src]="item?.imgSrc">
+  </a>
+  <h3 class="product-title">
+    {{ item?.title }} <br>
+  </h3>
+  <p class="text-secondary product-detail">
+    {{ item?.description }}  
+  </p>
+  <a class="h4" href="#">
+    <i class="fa fa-arrow-circle-right"></i>
+  </a>
+
+  <button (click)="handleButtonClick()">
+    Select Me
+  </button>
+  <ng-content></ng-content>
+</div>

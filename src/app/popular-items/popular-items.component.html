@@ -1,0 +1,38 @@
+<div class="text-center setion-heading">
+    <h2 class="text-center">Popular Items</h2>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <app-popular-item 
+                        [item]="item1"
+                        (itemClicked)="handleItemClicked($event)">
+                        <div>
+                            Last clicked item is {{parentLastClickedItem?.title}}
+                        </div>
+                    </app-popular-item>
+                </div>
+
+                <div class="col-md-4">
+                    <app-popular-item 
+                        [item]="item2"
+                        (itemClicked)="handleItemClicked($event)">
+                        <div>
+                            Last clicked item is {{parentLastClickedItem?.title}}
+                        </div>
+                    </app-popular-item>
+                </div>
+
+                <div class="col-md-4">
+                    <app-popular-item 
+                        [item]="item3"
+                        (itemClicked)="handleItemClicked($event)">
+                        <div>
+                            Last clicked item is {{parentLastClickedItem?.title}}
+                        </div>
+                    </app-popular-item>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
